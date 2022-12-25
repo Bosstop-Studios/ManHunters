@@ -1,0 +1,2 @@
+# ManHunters
+Manhunt Plugin
