@@ -12,7 +12,7 @@ import org.bukkit.entity.Player;
 
 public class Chat {
     private final char translateCharacter = '&';
-    private final String prefix = "&0[&bManHunt&0]&r";
+    private final String prefix = "&0[&4ManHunt&0]&r";
     private HashMap<String, String> hexToMCColors = new HashMap<String, String>(); // HEX, MC-Color
 
     public Chat() {

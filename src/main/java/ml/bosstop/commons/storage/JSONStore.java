@@ -16,11 +16,17 @@ public class JSONStore {
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().serializeNulls().create();
 
     private static ConfigFormat createDefaultConfig() {
-        ConfigFormat config = new ConfigFormat();
+        ConfigFormat config = new ConfigFormat()
+                .setChat("&7[&b%role%&7] &b%player% &7» &f%message%", true)
+                .setTablist("&b%role% &7» &b%player%", true);
         return config;
     }
 
     private static void loadConfig() throws IOException {
+        if (!instance.getDataFolder().exists()) {
+            instance.getDataFolder().mkdir();
+        }
+
         File file = new File(instance.getDataFolder(), "config.json");
         if (!file.exists()) {
             try {

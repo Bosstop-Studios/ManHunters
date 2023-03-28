@@ -2,7 +2,6 @@ name: ManHunters
 version: 1.2
 website: 'https://sirblob.bosstop.ml'
 main: ml.bosstop.manhunters.ManHunters
-api-version: 1.19
 author: Sir_Blob_
 
 commands:
